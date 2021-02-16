@@ -1,6 +1,7 @@
 #     Slovak translate by: Judzi 2.2.2013     #
 #      Next Translation & Correction by:      #
 #               Thymue 7.8.2017               #
+#           iViMaister 16.2.2021              #
 #   in future there can be more translators   #
 #         if they are not listed here         #
 #      check Translators on GitHub Wiki.      #
@@ -46,7 +47,7 @@ error:
     max_registration: '&fPrekročil si maximum registrovaných účtov(%reg_count/%max_acc|%reg_names).'
     logged_in: '&cAktuálne si už prihlásený!'
     kick_for_vip: '&3Uvoľnil si miesto pre VIP hráča!'
-    # TODO kick_unresolved_hostname: '&cAn error occurred: unresolved player hostname!'
+    kick_unresolved_hostname: '&cNastala chyba: nevyriešené meno hosta!'
     tempban_max_logins: '&cBol si dočasne zabanovaný za opakované zadanie zlého hesla.'
 
 # AntiBot
@@ -85,7 +86,7 @@ on_join_validation:
     country_banned: '&4Tvoja krajina je zabanovaná na tomto serveri!'
     not_owner_error: 'Nie si majiteľom tohto účtu. Prosím zvoľ si iné meno!'
     invalid_name_case: 'Mal by si sa pripojiť s nickom %valid, nie %invalid - pozor na veľké a malé písmená.'
-    # TODO quick_command: 'You used a command too fast! Please, join the server again and wait more before using any command.'
+    quick_command: 'Použil si príkazy príliš rýchlo! Prosím, pripoj sa na server znova a počkaj o chvíľu viac pred použitím príkazu.'
 
 # Email
 email:
@@ -96,10 +97,10 @@ email:
     old_email_invalid: '&cNeplatný starý email, skús to znovu!'
     invalid: '&cNeplatná emailová adresa, skús to znovu!'
     added: '&2Emailová adresa bola úspešne pridaná k tvojmu účtu!'
-    # TODO add_not_allowed: '&cAdding email was not allowed'
+    add_not_allowed: '&cPridávanie Emailu nie je povolené!'
     request_confirmation: '&cProsím potvrď svoju emailovú adresu!'
     changed: '&2Emailová adresa bola úspešne zmenená!'
-    # TODO change_not_allowed: '&cChanging email was not allowed'
+    change_not_allowed: '&cMenenie emailu nie je povolené!'
     email_show: '&2Tvoja súčastná emailová adresa je: &f%email'
     no_email_for_account: '&2Momentálne nemáš emailovú adresu spojenú s týmto účtom.'
     already_used: '&4Túto emailovú adresu už niekto používa.'
@@ -125,18 +126,18 @@ captcha:
     usage_captcha: '&3Pre prihlásenie musíš vyriešiť captcha kód, prosím použi príkaz: /captcha %captcha_code'
     wrong_captcha: '&cNesprávny kód captcha, prosím napíš "/captcha %captcha_code" do chatu!'
     valid_captcha: '&2Správne si vyriešil captcha kód!'
-    # TODO captcha_for_registration: 'To register you have to solve a captcha first, please use the command: /captcha %captcha_code'
-    # TODO register_captcha_valid: '&2Valid captcha! You may now register with /register'
+    captcha_for_registration: 'Na zaregistrovanie musíš najprv vyriešit Captchu, použi tento príkaz : /captcha %captcha_code'
+    register_captcha_valid: '&2Captcha je platná! Môžeš sa zaregistrovať príkazom : /register'
 
 # Verification code
 verification:
-    # TODO code_required: '&3This command is sensitive and requires an email verification! Check your inbox and follow the email''s instructions.'
-    # TODO command_usage: '&cUsage: /verification <code>'
-    # TODO incorrect_code: '&cIncorrect code, please type "/verification <code>" into the chat, using the code you received by email'
-    # TODO success: '&2Your identity has been verified! You can now execute all commands within the current session!'
-    # TODO already_verified: '&2You can already execute every sensitive command within the current session!'
-    # TODO code_expired: '&3Your code has expired! Execute another sensitive command to get a new code!'
-    # TODO email_needed: '&3To verify your identity you need to link an email address with your account!!'
+    code_required: '&3Tento príkaz je citlivý a potrebuje overenie emailom! Pozri si emailovú schránku a riaď sa s inštrukciami ktoré boli podané v maily.'
+    command_usage: '&cPouži: /verification <code>'
+    incorrect_code: '&cNesprávne heslo, prosím napíš "/verification <code>" do chatu, a použi heslo ktoré máš v emaily!'
+    success: '&2Tvoja identita bola overená! Teraz môžeš použiť všetky príkazy v rámci aktuálnej relácie!'
+    already_verified: '&2Už môžeš použiť všetky citlivé príkazy v rámci tejto relácie!'
+    code_expired: '&3Tvoj kód vypršal! Použi znova citlivý príkaz aby si dostal nový kód!'
+    email_needed: '&3Aby si overil svoju identitu, potrebuješ mať prepojený email s tvojim účtom!!'
 
 # Time units
 time:
@@ -152,12 +153,12 @@ time:
 # Two-factor authentication
 two_factor:
     code_created: '&2Tvoj tajný kód je %code. Môžeš ho oskenovať tu: %url'
-    # TODO confirmation_required: 'Please confirm your code with /2fa confirm <code>'
-    # TODO code_required: 'Please submit your two-factor authentication code with /2fa code <code>'
-    # TODO already_enabled: 'Two-factor authentication is already enabled for your account!'
-    # TODO enable_error_no_code: 'No 2fa key has been generated for you or it has expired. Please run /2fa add'
-    # TODO enable_success: 'Successfully enabled two-factor authentication for your account'
-    # TODO enable_error_wrong_code: 'Wrong code or code has expired. Please run /2fa add'
-    # TODO not_enabled_error: 'Two-factor authentication is not enabled for your account. Run /2fa add'
-    # TODO removed_success: 'Successfully removed two-factor auth from your account'
-    # TODO invalid_code: 'Invalid code!'
+    confirmation_required: '&4Prosím potvrď kód príkazom: /2fa confirm <code>'
+    code_required: '&4Prosím zadaj tvoj dvojfázový overovací kód príkazom: /2fa code <code>'
+    already_enabled: '&2Dvojfázové overenie je už na tvojom účte povolené!'
+    enable_error_no_code: '&4Žiadny overovací kód nebol vygenerovaný pre teba alebo vypršal. Použi /2fa add'
+    enable_success: '&2Dvojfázové overenie bolo úspešne pridané na tvoj účet!'
+    enable_error_wrong_code: '&cZlý kód alebo kód vypršal. Použi /2fa add'
+    not_enabled_error: '&4Nemáš zapnuté dvojfázové overenie! Použi /2fa add'
+    removed_success: '&2Dvojfázové overenie bolo úspešne odstránené z tvojho účtu!'
+    invalid_code: '&4Neplatný kód!'
